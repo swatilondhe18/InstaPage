@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(#2fab9d,#3e3eb8); */
+    background: linear-gradient(rgb(225, 45, 153),rgb(247, 33, 33));
+    font-family: sans-serif;
+}
+.container{
+    text-align: center;
+    padding: 20px;
+}
+.text{
+    color:azure;
+    letter-spacing: 1px;
+    margin: 20px;
+    font-size: 20px;
+}
+.page{
+    width: 350px;
+    background: azure;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    padding-left: 25px;   
+    padding-right: 25px;
+}
+.title{
+    padding: 30px 0px;
+    text-transform: capitalize;
+    font-size: 45px;
+    font-family: 'Pacifico', cursive;;
+}
+form{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+form input{
+    margin-bottom: 5px;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 3px;
+    outline: none;
+}
+form input :focus{
+    border: 1px solid rgba(0,0,0,0.7);
+    background: #efefef;
+
+}
+form input[type="text"],  input[type="password"] {
+    padding-left: 10px;
+    position: relative;
+    height: 35px;
+    font-size: 17px; 
+}
+input ::placeholder{
+    font-weight: normal;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+input :focus::placeholder{
+    position: absolute;
+    font-size: 10px;
+    transform: translateY(-13px);
+
+}
+form button{
+    border: none;
+    background: rgb(34, 74, 234);
+    padding: 5px 0;
+    margin-top: 5px;
+    color: azure;
+    border-radius: 3ps;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+}
+form button:active{
+    background: rgb(56, 56, 246);
+    transform: scale(0.995);
+}
+
+form .option{
+    color:grey;
+    margin: 10px 0;
+    font-weight: bold;
+    position: relative;
+}
+form .option::before{
+    position: absolute;
+    content: '';
+    width: 37%;
+    height: 2px;
+    background: gray;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+form .option::after{
+    position: absolute;
+    content: '';
+    width: 37%;
+    height: 2px;
+    background: gray;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+.fblink{
+    margin-top: 15%;
+    width: 100%;  
+}
+.fblink span{
+    font-size: 18px;
+    color: rgb(26, 26, 234);
+    margin-right: 5px;
+}
+.fblink a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(26, 26, 234);
+}
+.forget-id{
+    margin: 15%;
+}
+.forget-id a{
+    text-decoration: none;
+    color: rgb(48, 48, 239);
+    font-size: 12px;
+    font-weight: 500;
+}
+.page .signup{
+    position: relative;
+    border: 1px solid rgb(174, 172, 172);
+    border-radius: 2px;
+    width: 90%;
+    left:50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+.signup a{
+    text-decoration: none;
+    margin-left: 5px;
+    color: rgb(28, 97, 247);
+    font-weight: bold;
+
+}
